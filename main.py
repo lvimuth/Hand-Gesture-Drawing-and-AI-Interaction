@@ -26,7 +26,7 @@ image_combine = None
 output_text = ""
 # Initialize the HandDetector class with the given parameters
 detector = HandDetector(staticMode=False, maxHands=1, modelComplexity=1, detectionCon=0.5, minTrackCon=0.5)
-genai.configure(api_key="AIzaSyD7ViPV0w1dnXdXtYIao7331LM5hlMzbsc")
+genai.configure(api_key="API_KEY")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def getHandInfo(img):
